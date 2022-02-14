@@ -12,7 +12,7 @@ class ManagerBaseController extends Controller
      * ManageBaseEditable and SalesManager.
      * @return \Illuminate\View\View
      */
-    public function view() {}
+    public function view($id) {}
 
     public function list() {}
 }

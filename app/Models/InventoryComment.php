@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Comment extends Model
+class InventoryComment extends Model
 {
     use HasFactory;
     /**
@@ -13,6 +13,8 @@ class Comment extends Model
      *
      * @var string[]
      */
+    public $timestamps = false;
+    
     protected $fillable = [
         'message',
         'date',
@@ -20,4 +22,5 @@ class Comment extends Model
         'category_id',
         'item_id',
     ];
+    protected $table = 'im_comment';
 }
