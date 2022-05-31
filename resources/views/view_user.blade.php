@@ -56,7 +56,7 @@
     </form>
 
     <div class="comments-list">
-        <a href="/users/view/{{ $user->id}}/add_comment">Add Comment</a>
+        <a href="/users/view/{{$user->id}}/add_comment">Add Comment</a>
         @if (count(array($comments)) > 0)
             @foreach ($comments as $comment)
                 @if ($user->id === $comment->item_id)

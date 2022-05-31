@@ -1,0 +1,252 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+a, 
+button {
+    padding:1%;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+a:hover, 
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+header {
+    display: flex;
+    height: 10vh;
+    border: 1px solid;
+    justify-content:space-between;
+}
+
+header a {
+    flex-grow: 1;
+    text-decoration: none;
+    text-align: center;
+}
+
+header a:hover {
+    background-color: white;
+    color:black;
+}
+
+header h1 {
+    flex-grow: 2;
+    text-align: center;
+    font-size: large;
+}
+/* Header */
+
+/* Login Page */
+.login-form {
+    border: 1px solid black;
+    min-height: 70vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.login-form div {
+    display: flex;
+    justify-content:center;
+}
+
+.login-form div label {
+    width: 20%;
+}
+/* Login Page */
+
+/* HomePage */
+main {
+    width: 90vw;
+    margin: auto; 
+}
+
+ul#nav_links {
+    display:flex;
+    justify-content: space-between;
+}
+div#tables_container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+div#tables_container table {
+    width: 50%;
+    border: 1px solid black;
+    margin: 1%;
+    text-align: center;
+}
+
+div#tables_container table th {
+    background-color: rgb(172, 167, 167);
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+div#tables_container table tbody tr:nth-child(odd) {
+    background-color: rgb(156, 151, 151);
+    border: 1px solid black;
+}
+
+div#tables_container table td {
+    border: 1px solid grey;
+}
+/* HomePage */
+
+/* List Users Page */
+div#users_tables_container, div#suppliers_tables_container {
+    width: 90vw;
+    height: 70vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+div#users_tables_container a#add_user_button, div#suppliers_tables_container a#add_supplier_button {
+    width: 30vw;
+    text-align: center;
+    margin:5vh auto;
+}
+
+div#users_tables_container table, div#suppliers_tables_container table {
+    width: 60%;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div#users_tables_container table th, div#suppliers_tables_container table th {
+    background-color: rgb(172, 167, 167);
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+div#users_tables_container table tr td a, div#suppliers_tables_container table tr td a {
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 1px solid grey;
+}
+
+div#users_tables_container table tr td a:hover, div#suppliers_tables_container table tr td a:hover {
+    background-color: white;
+    color:black;
+}
+/* List Users Page */
+
+/* View User Page */
+main.view-user {
+    display: flex;
+    justify-content: space-between;
+}
+.view-user-infos {
+    border: 1px solid black;
+    min-height: 70vh;
+    
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.view-user-infos div {
+    display: flex;
+    justify-content:center;
+}
+
+.view-user-infos div label {
+    width: 20%;
+}
+
+.comments-list {
+    width: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    border: 1px solid black;
+}
+.view-user-infos div.buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+/* Add User Page */
+.add-user-form, .edit-user-form, .add-product-form, .add-supplier-form{
+    border: 1px solid black;
+    min-height: 70vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.add-user-form div, .edit-user-form div, .add-product-form div, .add-supplier-form div {
+    display: flex;
+    justify-content:center;
+}
+
+.add-user-form div label, .edit-user-form div label, .add-product-form div label, .add-supplier-form div label {
+    width: 20%;
+}
+
+.add-user-form .buttons, .edit-user-form .buttons, .add-product-form .buttons, .add-supplier-form .buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/* Main Product Page */
+.main_product_page_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.add_product_button {
+    text-align: center;
+    width: 10%;
+}
+.search_products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    width: 50%;
+}
+
+
+

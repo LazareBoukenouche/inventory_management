@@ -23,4 +23,8 @@ class Supplier extends Model
         'email',
         'phone_number',
     ];
+
+    public $timestamps = false;
+    
+    protected $table = 'im_supplier';
 }
